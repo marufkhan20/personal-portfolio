@@ -2,8 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap");
+
 body {
   margin: 0;
   padding: 0;
   background: #1a1a1a;
+  font-family: "Epilogue", sans-serif;
+  color: #ddd;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  font-weight: 600;
+}
+
+ul,
+li {
+  list-style: none;
 }
