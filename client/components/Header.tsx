@@ -1,9 +1,35 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 
 const Header = () => {
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    // Add an event listener to the window for scrolling
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      // Clean up the event listener when the component unmounts
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    // Check the scroll position and update the state
+    if (window.scrollY > 100) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  };
   return (
-    <header className="text-white border-b border-white/20 fixed top-0 left-0 right-0 w-full">
+    <header
+      className={`text-white border-b border-white/20 fixed top-0 left-0 right-0 w-full ${
+        scrolling ? "bg-secondary" : ""
+      } z-50`}
+    >
       <div className="container flex items-center justify-between gap-5">
         <div>
           <Link href="/" className="font-semibold text-lg">
