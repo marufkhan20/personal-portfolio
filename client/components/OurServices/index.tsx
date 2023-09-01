@@ -3,7 +3,7 @@ import ServiceItem from "./ServiceItem";
 
 const OurServices = () => {
   return (
-    <section className="py-28">
+    <section className="py-28 bg-secondary">
       <div className="container">
         <div className="flex justify-between gap-5">
           <div className="w-[30%]">

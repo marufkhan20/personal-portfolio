@@ -3,7 +3,7 @@ import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   return (
-    <section className="pb-28">
+    <section className="py-28">
       <div className="container">
         <Heading title="My Projects" subTitle="Recent Projects" center />
         <div className="grid grid-cols-3 gap-8 mt-10">

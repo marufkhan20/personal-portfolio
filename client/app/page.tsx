@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import Blogs from "@/components/Blogs";
 import Header from "@/components/Header";
 import MyExperience from "@/components/MyExperience";
 import OurServices from "@/components/OurServices";
@@ -15,6 +16,7 @@ const Home = () => {
       <Projects />
       <MyExperience />
       <Testimonials />
+      <Blogs />
     </main>
   );
 };
