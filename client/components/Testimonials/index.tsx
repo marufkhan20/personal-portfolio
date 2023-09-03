@@ -4,10 +4,10 @@ import TestimonialItem from "./TestimonialItem";
 
 const Testimonials = () => {
   return (
-    <section className="py-28">
+    <section className="py-28" id="testimonials">
       <div className="container">
-        <div className="flex justify-between gap-5 items-center">
-          <div className="w-[33%]">
+        <div className="flex flex-col lg:flex-row justify-between gap-5 items-center">
+          <div className="w-full lg:w-[33%]">
             <Heading title="Testimonials" subTitle="WHAT CLIENTS SAYS" />
             <div className="flex items-center gap-5">
               <div className="w-[50px] h-[50px] rounded-full border border-white/20 flex items-center justify-center cursor-pointer transition-all hover:bg-gray-500/20">
@@ -18,7 +18,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          <div className="w-[66%] grid grid-cols-2 gap-8">
+          <div className="w-full lg:w-[66%] grid md:grid-cols-2 gap-8">
             <TestimonialItem
               rating={5}
               review=" I have been hiring people in this space for a number of years and I have

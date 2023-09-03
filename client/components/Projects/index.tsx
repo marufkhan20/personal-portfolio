@@ -3,10 +3,10 @@ import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   return (
-    <section className="py-28">
+    <section className="py-28" id="projects">
       <div className="container">
         <Heading title="My Projects" subTitle="Recent Projects" center />
-        <div className="grid grid-cols-3 gap-8 mt-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
           <ProjectItem
             thumbnail="/img/projects/2.jpg"
             category="DESIGN ART"

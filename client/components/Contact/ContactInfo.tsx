@@ -11,7 +11,7 @@ const ContactInfo = () => {
         If you would like to work with us or just want to get in touch, we’d
         love to hear from you!
       </p>
-      <h2 className="text-3xl mt-6 underline">+1 840 841 25 69</h2>
+      <h2 className="text-xl sm:text-3xl mt-6 underline">+1 840 841 25 69</h2>
       <div className="mt-14 flex items-center gap-6">
         <a
           href="#"

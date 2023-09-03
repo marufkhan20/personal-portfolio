@@ -9,14 +9,14 @@ interface IProps {
 
 const BlogItem: FC<IProps> = ({ thumbnail, date, title, tags }) => {
   return (
-    <div className="p-6 border border-white/20 rounded-lg flex items-center justify-between gap-6">
-      <div className="w-[50%]">
+    <div className="p-6 border border-white/20 rounded-lg flex items-center flex-col md:flex-row justify-between gap-6">
+      <div className="w-full md:w-[50%]">
         <img src={thumbnail} className="rounded-lg" alt="blog" />
       </div>
-      <div className="w-[50%]">
+      <div className="w-full md:w-[50%]">
         <span className="text-xs uppercase">{date}</span>
         <h2 className="text-2xl font-medium my-4">{title}</h2>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-1 flex-wrap">
           {tags?.map((tag) => (
             <button
               key={tag}

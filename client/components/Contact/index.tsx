@@ -3,9 +3,9 @@ import ContactInfo from "./ContactInfo";
 
 const Contact = () => {
   return (
-    <section className="py-28">
+    <section className="py-28" id="contact">
       <div className="container">
-        <div className="grid grid-cols-2 gap-20">
+        <div className="grid lg:grid-cols-2 gap-20">
           <ContactInfo />
           <ContactForm />
         </div>

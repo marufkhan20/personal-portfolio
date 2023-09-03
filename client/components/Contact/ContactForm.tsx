@@ -4,7 +4,7 @@ const ContactForm = () => {
     <div>
       <form action="">
         <div className="flex flex-col gap-7">
-          <div className="flex items-center gap-6">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-6">
             <input
               type="text"
               placeholder="Name"
