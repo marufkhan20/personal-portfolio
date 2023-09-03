@@ -44,22 +44,34 @@ const Header = () => {
           } left-0 right-0 w-full bg-secondary flex flex-col md:flex-row md:items-center md:gap-11 uppercase text-white font-semibold md:flex`}
         >
           <li className="transition-all hover:text-gray-500 py-4 px-8 md:p-0 border-b md:border-none border-white/20">
-            <a href="#home">Home</a>
+            <a href="#home" onClick={() => setShowMenu(false)}>
+              Home
+            </a>
           </li>
           <li className="transition-all hover:text-gray-500 py-4 px-8 md:p-0 border-b md:border-none border-white/20">
-            <a href="#services">Services</a>
+            <a href="#services" onClick={() => setShowMenu(false)}>
+              Services
+            </a>
           </li>
           <li className="transition-all hover:text-gray-500 py-4 px-8 md:p-0 border-b md:border-none border-white/20">
-            <a href="#projects">Projects</a>
+            <a href="#projects" onClick={() => setShowMenu(false)}>
+              Projects
+            </a>
           </li>
           <li className="transition-all hover:text-gray-500 py-4 px-8 md:p-0 border-b md:border-none border-white/20">
-            <a href="#testimonials">Testimonials</a>
+            <a href="#testimonials" onClick={() => setShowMenu(false)}>
+              Testimonials
+            </a>
           </li>
           <li className="transition-all hover:text-gray-500 py-4 px-8 md:p-0 border-b md:border-none border-white/20">
-            <a href="#blogs">Blogs</a>
+            <a href="#blogs" onClick={() => setShowMenu(false)}>
+              Blogs
+            </a>
           </li>
           <li className="transition-all hover:text-gray-500 py-4 px-8 md:p-0 border-b md:border-none border-white/20">
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={() => setShowMenu(false)}>
+              Contact
+            </a>
           </li>
         </nav>
         <div className="block md:hidden">
